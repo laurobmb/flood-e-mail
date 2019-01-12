@@ -31,7 +31,7 @@ def envia(fromaddr,senha,toaddr,assunto_do_email,corpo_do_email):
 	try:
 		server.sendmail(fromaddr, toaddr, text)
 		server.quit()
-		print ('Email enviado para o atendimento')
+		print ('E-mail enviado OK')
 	except smtplib.SMTPException as error:
 		print error
 
